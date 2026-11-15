@@ -39,6 +39,12 @@ A probability threshold of **0.35** was selected using out-of-fold training pred
 2. **Threshold and call capacity:** The selected 0.35 threshold may need adjustment depending on the number of follow-up calls clinics can handle.
 3. **Observational data:** The analysis identifies associations, not causes. For example, an association between reminders and no-shows does not prove that reminders directly prevent missed appointments.
 
+## GenAI Analysis: Root Cause vs Reminder Status
+
+The analysed follow-up notes were merged with the cleaned appointment dataset using `appointment_id`. A cross-tabulation of `root_cause` against `reminder_sent` showed that 5 out of 10 appointments had no recorded reminder sent. Both notes classified as `forgot_or_no_reminder` also had `reminder_sent = No`.
+
+This is an illustrative sample and should not be treated as a clinic-wide conclusion.
+
 ## Project Structure
 
 ```text
